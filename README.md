@@ -1,3 +1,2 @@
 # playground
-a place where I store ideas, resources, or share and discuss things with others
-I'm learning git
+a place where I store ideas, resources, or share and discuss things with others.
