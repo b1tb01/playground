@@ -49,12 +49,12 @@ CREATE TABLE ORDERS
     PRIMARY KEY(O_ID)
     );
 
-    
+
 CREATE TABLE PIZZA
     (Size           VARCHAR(20)         NOT NULL,
     Crust_Type      VARCHAR(20)         NOT NULL,
     Cooking_State   VARCHAR(20)         NOT NULL,
-    Timestamps      DATE          NOT NULL,
+    Timestamps      DATE                NOT NULL,
     Num_of_Pizza    INT                 NOT NULL,
     BP_ID           INT                 NOT NULL,
     O_ID            INT                 NOT NULL,

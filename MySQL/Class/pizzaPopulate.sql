@@ -48,20 +48,25 @@ VALUES
    ('X-Large', 'Gluten-Free', 12.5, 6, 16)
    ;
 
+INSERT INTO CUSTOMER
+VALUES
+   ('Andrew', 'Wilkes-Krier', 1),
+   ('Matt', 'Engers',         2),
+   ('Frank', 'Turner',        3),
+   ('Milo', 'Auckerman',      4)
+   ;
 
 INSERT INTO ORDERS
 VALUES
-   ('Dine-in', company, customer, NULL,   1),
-   ('Dine-in', company, customer, NULL,   2),
-   ('Dine-in', company, customer, NULL,   3),
-   ('Pickup',  company, customer, 1,      4),
-   ('Delivery', company, customer, 1,     5),
-   ('Pickup', company, customer, 2,       6),
-   ('Delivery', company, customer, 3,     7),
-   ('Delivery', company, customer, 4,     8)
+   ('Dine-in', 0, 0, NULL,   1),
+   ('Dine-in', 0, 0, NULL,   2),
+   ('Dine-in', 0, 0, NULL,   3),
+   ('Pickup',  0, 0, 1,      4),
+   ('Delivery', 0, 0, 1,     5),
+   ('Pickup', 0, 0, 2,       6),
+   ('Delivery', 0, 0, 3,     7),
+   ('Delivery', 0, 0, 4,     8)
    ;
-
-
 
 INSERT INTO PIZZA
 VALUES
@@ -107,13 +112,7 @@ VALUES
    (2, 'Matt', 'Engers', '864-474-9953',           6)
    ;
 
-INSERT INTO CUSTOMER
-VALUES
-   ('Andrew', 'Wilkes-Krier', 1),
-   ('Matt', 'Engers',         2),
-   ('Frank', 'Turner',        3),
-   ('Milo', 'Auckerman',      4)
-   ;
+
 
 INSERT INTO DISCOUNT_ORDERS
 VALUES
