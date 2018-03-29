@@ -54,7 +54,7 @@ CREATE TABLE PIZZA
     (Size           VARCHAR(20)         NOT NULL,
     Crust_Type      VARCHAR(20)         NOT NULL,
     Cooking_State   VARCHAR(20)         NOT NULL,
-    Timestamps      DATE                NOT NULL,
+    Timestamps      VARCHAR(20)         NOT NULL,
     Num_of_Pizza    INT                 NOT NULL,
     BP_ID           INT                 NOT NULL,
     O_ID            INT                 NOT NULL,
@@ -88,9 +88,9 @@ CREATE TABLE DELIVERY
     );
 
 CREATE TABLE DINE_IN
-    (ID     INT             NOT NULL,
-    Table_Num   INT         NOT NULL,
-    O_ID        INT         NOT NULL,
+    (ID         INT                 NOT NULL,
+    Table_Num   VARCHAR(20)         NOT NULL,
+    O_ID        INT                 NOT NULL,
     FOREIGN KEY(O_ID) REFERENCES ORDERS(O_ID),
     PRIMARY KEY(ID)
     );
