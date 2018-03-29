@@ -58,14 +58,14 @@ VALUES
 
 INSERT INTO ORDERS
 VALUES
-   ('Dine-in', 0, 0, NULL,   1),
-   ('Dine-in', 0, 0, NULL,   2),
-   ('Dine-in', 0, 0, NULL,   3),
-   ('Pickup',  0, 0, 1,      4),
-   ('Delivery', 0, 0, 1,     5),
-   ('Pickup', 0, 0, 2,       6),
-   ('Delivery', 0, 0, 3,     7),
-   ('Delivery', 0, 0, 4,     8)
+   ('Dine-in',    3.68,    11.5,    NULL,    1),
+   ('Dine-in',    2.48,    8.1,     NULL,    2),
+   ('Dine-in',    1.16,    5.25,    NULL,    3),
+   ('Pickup',     19.8,    64.5,    1,       4),
+   ('Delivery',   16.73,   35.2,    1,       5),
+   ('Pickup',     8.02,    16.1,    2,       6),
+   ('Delivery',   2.89,    13.5,    3,       7),
+   ('Delivery',   5.4,     19.13,   4,       8)
    ;
 
 INSERT INTO PIZZA
