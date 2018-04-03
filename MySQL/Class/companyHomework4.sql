@@ -1,0 +1,11 @@
+--Homework 4
+--1.Who works on the Reorganization project?
+--2.Who works in on a project that is located in Stafford?Do not show any repeated names.
+--3.Which Employees have a Daughter, and what is the daughter’s name?
+--4.Tell me the names and addresses of all the managers, as well as the number of dependents they have.
+--5.Show me the names of all the employees who have a supervisor.
+--6.What are names of employees who work in the Administration department who make less money than at least one employee who works in the Research department.
+--7.For each Project, show the project name, the number of employees who work on the project, and the average hours per week each employee works on that project. Order the results alphabetically by the name of the project.
+--8.For each employee, show the number of projects they work on.
+--9.Show the names of all dependents who are dependents of someone who works on the reorganization project.
+--10.For employees who make less than $30000, change their salary to $30000. For all other employees, give them a 10% raise.
