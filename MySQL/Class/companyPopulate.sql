@@ -25,6 +25,18 @@ VALUES
     (5,  'Houston')
     ;
 
+
+INSERT INTO PROJECT
+VALUES
+    ('ProductX',            1,       'Bellaire',   5),
+    ('ProductY',            2,       'Sugarland',  5),
+    ('ProductZ',            3,       'Houston',    5),
+    ('Computerization',     10,      'Stafford',   4),
+    ('Reorganization',      20,      'Houston',    1),
+    ('Newbenefits',         30,      'Stafford',   4)
+    ;
+
+    
 INSERT INTO WORKS_ON
 VALUES
     ('123456789',  1, 32.5),
@@ -45,15 +57,7 @@ VALUES
     ('888665555',  20, NULL)
     ;
 
-INSERT INTO PROJECT
-VALUES
-    ('ProductX',            1,       'Bellaire',   5),
-    ('ProductY',            2,       'Sugarland',  5),
-    ('ProductZ',            3,       'Houston',    5),
-    ('Computerization',     10,      'Stafford',   4),
-    ('Reorganization',      20,      'Houston',    1),
-    ('Newbenefits',         30,      'Stafford',   4)
-    ;
+
 
 
 INSERT INTO DEPENDENT
