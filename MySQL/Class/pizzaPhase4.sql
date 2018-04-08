@@ -2,6 +2,7 @@
 SELECT Name, Inventory FROM TOPPING
 ;
 --2.)What is the name of each customer,how many orders have they placed, and how many pizzas have they ordered?
+SELECT Fname, Lname, 
 --3.)What discounts provide a percentage off, and what is that percentage?
 --4.)What toppings cost the customer less than a dollar toadd to their pizza?
 --5.)For each topping, how much does it cost the business to add that topping toeach size of pizza. Note that the cost is per unit, and there are different amounts of the topping that go on each size.
