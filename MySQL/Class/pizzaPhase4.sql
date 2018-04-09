@@ -1,7 +1,7 @@
 --1.)What are the current inventory levels for each topping?
 SELECT Name, Inventory FROM TOPPING
 ;
---2.)What is the name of each customer,how many orders have they placed, and how many pizzas have they ordered?
+--2.)What is the name of each delivery customer,how many orders have they placed, and how many pizzas have they ordered?
 SELECT Fname, Lname, 
 --3.)What discounts provide a percentage off, and what is that percentage?
 --4.)What toppings cost the customer less than a dollar toadd to their pizza?
