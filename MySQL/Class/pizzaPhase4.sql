@@ -1,3 +1,4 @@
+use PizzaProjectDB_3sh2;
 --1.)What are the current inventory levels for each topping?
 SELECT Name, Inventory 
 FROM TOPPING
@@ -45,9 +46,21 @@ FROM (((ORDERS JOIN DISCOUNT_ORDERS ON ORDERS.O_ID=DISCOUNT_ORDERS.O_ID)
 JOIN DISCOUNT ON DISCOUNT_ORDERS.D_ID=DISCOUNT.D_ID) JOIN PIZZA ON ORDERS.O_ID=PIZZA.O_ID)
 WHERE DISCOUNT.Name LIKE "%Lunch Special%"
 ;
---8.)What Customersdo we not have an address on file for?
-
+--8.)What Customers do we not have an address on file for?
+SELECT DISTINCT Fname as First_Name, Lname as Last_Name
+FROM ((CUSTOMER LEFT OUTER JOIN ORDERS ON CUSTOMER.C_ID=ORDERS.C_ID) LEFT OUTER JOIN DELIVERY ON ORDERS.O_ID=DELIVERY.O_ID)
+WHERE NOT ORDERS.Type="Delivery" AND CUSTOMER.C_ID NOT IN (
+   SELECT CUSTOMER.C_ID 
+   FROM ((CUSTOMER JOIN ORDERS ON CUSTOMER.C_ID=ORDERS.C_ID) JOIN DELIVERY ON ORDERS.O_ID=DELIVERY.O_ID)
+   WHERE ORDERS.Type="Delivery")
+;
 --9.)What is the base price for a Large Gluten Free pizza?
-
+SELECT Price AS Base_Price
+FROM BASE_PRICE
+WHERE Size="Large" AND Crust_Type="Gluten-Free"
+;
 --10.)For each Topping, show how many large pizzas we could make with that topping based on the 
 --amount of inventory we currently have.
+SELECT TOPPING.Name AS Topping, FLOOR(Inventory/Large) AS Num_Large_Pizzas
+FROM TOPPING
+;
