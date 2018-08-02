@@ -1,0 +1,94 @@
+/* Whole file */
+
+html {
+  font-family: 'Roboto', Helvetica;
+  font-size: 16px;
+}
+
+/* Body */
+
+body {
+  background: #ffffff;
+  color: rgb(49, 49, 49);
+  margin: 0 auto;
+}
+
+/* NavBar */
+.navbar {
+  background-color: #ffffff;
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.navbar-canvas {
+  max-width: 425px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.navbar-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.my-Name {
+  text-align: center;
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 250%;
+  opacity: .85;
+}
+
+.navBar-item {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.navBar-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navBar-item a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+#navBar-item-active {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  opacity: .8;
+}
+
+/* Opacity on hover */
+
+.navbar-grid:hover>.navBar-item{
+  opacity: .25;
+}
+
+.navbar-grid:hover>#navBar-item-active {
+  opacity: .5;
+}
+
+.navbar-grid:hover>.navBar-item:hover {
+  opacity: .5;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  
+}
