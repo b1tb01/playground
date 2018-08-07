@@ -24,21 +24,10 @@
   <!-- Scripts -->
 
   <!-- Content related -->
-  <script src=""></script>
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics - My personal Website -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114400072-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-114400072-1');
-  </script>
+  <script src="index.js"></script>
 
   <!-- Title -->
-  <title>Language App</title>
+  <title>TuoMang</title>
 
 </head>
 
@@ -46,26 +35,55 @@
   <section class="lanaguage-app-page-content">
     <div class="language-app-flex-container">
       <section class="language-app-sidebar" id="Menu">
-        Menu
-        <div class="language-app-menu-option">
-          <a href="" id="language-app-link-default">
-            click 1
+        <div onclick="closeMenu();" id="close-menu-button">
+          X
+        </div>
+        <br> 脱盲
+        <div class="language-app-sidebar-option">
+          <a href="" class="language-app-sidebar-link" id="language-app-link-default">
+            Click 1
           </a>
         </div>
-        <div class="language-app-menu-option">
-          <a href="" id="language-app-link-default">
-            click 2
-          </a> 
+        <div class="language-app-sidebar-option">
+          <a href="" class="language-app-sidebar-link" id="language-app-link-default">
+            Click 2
+          </a>
         </div>
       </section>
       <section class="language-app-flex-item" id="Content">
-        <a href="" id="language-app-link-default">☰</a> Content
+        <button onclick="openMenu();" id="open-menu-button">
+          ☰
+        </button> 脱盲 - TuoMang
         <div class="language-app-content-container">
           <div class="language-app-content-item">
-            1
+            <h class="content-header">
+              Text Source
+            </h>
+            <p class="content-paragraph">
+              the text from the source
+            </p>
+            <p class="content-paragraph">
+              pinyin
+            </p>
+            <input>
           </div>
           <div class="language-app-content-item">
-            2
+            <button class="content-button">
+              Option1
+            </button>
+            <button class="content-button">
+              Option2
+            </button>
+            <button class="content-button">
+              Option3
+            </button>
+            <br>
+            <h class="content-header">
+              Subsection Header
+            </h>
+            <p class="content-paragraph">
+              content
+            </p>
           </div>
         </div>
       </section>
