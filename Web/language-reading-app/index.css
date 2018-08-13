@@ -51,7 +51,7 @@ body {
 .language-app-content-container {
   position: relative;
   height: 100%;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   background-color: rgb(192, 224, 250);
@@ -132,6 +132,13 @@ body {
 }
 
 .content-paragraph {
+  font-size: 18px;
+}
+
+.user-input {
+  padding: 5px 5px;
+  outline: none;
+  border: none;
   font-size: 18px;
 }
 
